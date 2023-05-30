@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family:inherit;
+}
+body{
+  background-color:beige;
+  overflow-y: scroll;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  
+  .left-column {
+    flex: 1;
+    background-image: url('Images/couple.jpg');
+    background-size: cover;
+  }
+  
+  .right-column {
+    flex: 1;
+    background-color:#e6c0b3;
+    color: white;
+    padding: 50px;
+  }
+  #us{font-size: 50px;font-family:inherit;margin-top: 20%;text-align: center;}
+  #fash{margin-left: 150px;margin-top: -120px;}
+  #explore{font-size: 23px;text-align:center;color: black;margin-top: -150px;}
+  #stars{margin-left: 47%;}
+  #brand{font-size:35px ;font-style: italic;margin-left: 50px;}
+  .gallery {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .images{
+    display: inline-block;
+    width: 33.33%;
+    position: relative;
+  }
+  
+  .main-image {
+    position: relative;
+  }
+  
+  .main-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .main-image h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 24px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .main-image:hover h2 {
+    opacity: 0;
+  }
+  
+  .hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .images:hover .hover-image {
+    opacity: 1;
+  }
+  
+  .hover-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hover-image p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 18px;
+  }
+  #hat{height:657px}
+  #winter{height: 657px;}
+  #coat{height: 657px;}
+  #word{margin-bottom: 70px;font-size: 20px;}
+  .team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  .team-member {
+    position: relative;
+    width: 300px;
+    height: 280px;
+    margin: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+
+  
+  .team-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .team-text {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .team-member:hover .team-image {
+    transform: scale(1.2);
+  }
+  
+  .team-member:hover .team-text {
+    bottom: 20px;
+    opacity: 1;
+  }
+  .our-story{margin-top: 100px;font-size: 20px;background-color: #e6c0b3;}
+  #para{font-size: 22px;margin-left: 2%;}
+  #story{text-align: center;text-decoration: none;}
+  .animate__fadeInLeft {
+    animation-name: fadeInLeft;
+  }
+  
+  .animate__fadeInRight {
+    animation-name: fadeInRight;
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  
